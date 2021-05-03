@@ -7402,8 +7402,8 @@ if text == ("تحديث السورس") and DevBESSO(msg) then
 send(msg.chat_id_,msg.id_,'• تم التحديث')
 os.execute('rm -rf BESSO.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/planthertech/miro/main/BESSO.lua')
-os.execute('wget https://raw.githubusercontent.com/planthertech/miro/main/start.lua')
+os.execute('wget https://raw.githubusercontent.com/planthertech/BESSO/main/BESSO.lua')
+os.execute('wget https://raw.githubusercontent.com/planthertech/BESSO/main/start.lua')
 dofile('BESSO.lua')  
 return false
 end
@@ -8806,8 +8806,8 @@ if text == "تحديث السورس •" then
 send(msg.chat_id_,msg.id_,'• تم التحديث')
 os.execute('rm -rf BESSO.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/planthertech/miro/main/BESSO.lua')
-os.execute('wget https://raw.githubusercontent.com/planthertech/miro/main/start.lua')
+os.execute('wget https://raw.githubusercontent.com/planthertech/BESSO/main/BESSO.lua')
+os.execute('wget https://raw.githubusercontent.com/planthertech/BESSO/main/start.lua')
 dofile('BESSO.lua')  
 return false
 end

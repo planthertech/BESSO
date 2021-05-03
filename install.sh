@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-cd $HOME/DEV-NAG
+cd $HOME/BESSO
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x NiggA
-chmod +x NG
+chmod +x BESSO
+chmod +x BE
 ./NG
 }
 installall(){

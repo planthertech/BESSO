@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-cd $HOME/DEV-NAG
+cd $HOME/BESSO
 rm -rf $HOME/.telegram-cli
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x NiggA
-chmod +x NG
-./NG
+chmod +x BESSO
+chmod +x BE
+./BE
 }
 if [ "$1" = "ins" ]; then
 install
